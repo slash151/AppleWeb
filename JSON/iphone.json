@@ -1,0 +1,63 @@
+{
+	"iphone": [{
+			"pclassify": "手机",
+			"pid": "1",
+			"pname": "iphone 12 Pro",
+			"pinfos": "5G goes Pro. A14 Bionic rockets past every other smartphone chip.",
+			"price": "$999",
+			"color": "Space Gray+Rose Gold+Green+Sky Blue",
+			"version": "64G#128G#256G#512G",
+			"pimg": "photo/iphone-12-pro.png"
+		},
+		{
+			"pclassify": "手机",
+			"pid": "2",
+			"pname": "iphone 12 Pro Max",
+			"pinfos": "5G goes Pro. A14 Bionic rockets past every other smartphone chip.",
+			"price": "$1099",
+			"color": "Space Gray+Rose Gold+Green+Sky Blue",
+			"version": "64G#128G#256G#512G",
+			"pimg": "photo/iphone-12-pro.png"
+		},
+		{
+			"pclassify": "手机",
+			"pid": "3",
+			"pname": "iphone 12",
+			"pinfos": "Blast past fast.5G speed. A14 Bionic, the fastest chip in a smartphone.",
+			"price": "$799",
+			"color": "Space Gray+Rose Gold+Green+Sky Blue",
+			"version": "64G#128G#256G#512G",
+			"pimg": "photo/iphone12mini.png"
+		},
+		{
+			"pclassify": "手机",
+			"pid": "4",
+			"pname": "iphone 12 mini",
+			"pinfos": "Blast past fast.5G speed. A14 Bionic, the fastest chip in a smartphone.",
+			"price": "$699",
+			"color": "Space Gray+Rose Gold+Green+Sky Blue",
+			"version": "64G#128G#256G#512G",
+			"pimg": "photo/iphone12mini.png"
+		},
+		{
+			"pclassify": "手机",
+			"pid": "5",
+			"pname": "iphone 11",
+			"pinfos": " The A13 bionic chip carried by Apple 11 is 6 times better than A12 and runs smoothly.",
+			"price": "$599",
+			"color": "Space Gray+Rose Gold+Green+Sky Blue",
+			"version": "64G#128G#256G#512G",
+			"pimg": "1"
+		},
+		{
+			"pclassify": "手机",
+			"pid": "6",
+			"pname": "iphone SE",
+			"pinfos": " Lots to love.Less to spend.  ",
+			"price": "$399",
+			"color": "Space Gray+Rose Gold+Green+Sky Blue",
+			"version": "64G#128G#256G#512G",
+			"pimg": "1"
+		}
+	]
+}

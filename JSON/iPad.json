@@ -1,0 +1,47 @@
+{
+	"iPad": [{
+			"pclassify": "iPad",
+			"pid": "01",
+			"pname": "iPad Air",
+			"pinfos": "iPad Air. Powerful. Colorful. Wonderful.",
+			"price": "$599",
+			"color": "Space Gray+Rose Gold+Green+Sky Blue",
+			"Connectivity": "Wi-Fi+Wi-Fi-Cellular",
+			"version": "64G#128G#256G#512G",
+			"pimg": "photo/ipad-air.png"
+		},
+		{
+			"pclassify": "iPad",
+			"pid": "02",
+			"pname": "iPad Pro",
+			"pinfos": "Your next computer is not a computer.",
+			"price": "$899",
+			"color": "Space Gray+Rose Gold+Green+Sky Blue",
+			"Connectivity": "Wi-Fi+Wi-Fi-Cellular",
+			"version": "64G#128G#256G#512G",
+			"pimg": "photo/ipadpro.png"
+		},
+		{
+			"pclassify": "iPad",
+			"pid": "03",
+			"pname": "iPad",
+			"pinfos": "Delightfully capable. Surprisingly affordable.",
+			"price": "$400",
+			"color": "Space Gray+Rose Gold+Green+Sky Blue",
+			"Connectivity": "Wi-Fi+Wi-Fi-Cellular",
+			"version": "64G#128G#256G#512G",
+			"pimg": "photo/ipad.png"
+		},
+		{
+			"pclassify": "iPad",
+			"pid": "04",
+			"pname": "iPad mini",
+			"pinfos": "Delightfully capable. Surprisingly affordable.",
+			"price": "$400",
+			"color": "Space Gray+Rose Gold+Green+Sky Blue",
+			"Connectivity": "Wi-Fi+Wi-Fi-Cellular",
+			"version": "64G#128G#256G#512G",
+			"pimg": "photo/ipad.png"
+		}
+	]
+}
