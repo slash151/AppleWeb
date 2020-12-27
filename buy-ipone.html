@@ -18,6 +18,9 @@
 			.footmain a {
 				color: #000;
 			}
+			.lidown{
+				border: 2px solid #0070c9 !important;
+			}
 		</style>
 
 	</head>
@@ -25,12 +28,12 @@
 		<!-- 导航 -->
 		<nav>
 			<div>
-				<a href="#"><span class="iconfont icon-pingguo"></span></a>
+				<a href="index.html"><span class="iconfont icon-pingguo"></span></a>
 				<a href="mac.html">Mac</a>
 				<a href="ipad.html">iPad</a>
 				<a href="iphone.html">iPhone</a>
 				<a href="iwatch.html">Watch</a>
-				<a href="music.html">Music</a>
+				<a href="#">Music</a>
 				<a href="#">技术支持</a>
 				<a href="#"><span class="iconfont icon-iconsreach"></span></a>
 				<a><span class="iconfont icon-bag cart"></span></a>
@@ -60,29 +63,29 @@
 					<span style="font-size: 16px;">Choose your color.</span>
 					<!-- 产品颜色 -->
 					<ul class="buy-info-color">
-						<li>
-							<a href="">
+						<li class="lidown">
+							<a>
 								<img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/finish-white-202010?wid=102&hei=102&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1601072989000">
 								<br>
 								<span></span>
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a>
 								<img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/finish-black-202010?wid=102&hei=102&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1601072988000">
 								<br>
 								<span></span>
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a>
 								<img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/finish-green-202010?wid=102&hei=102&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1601072990000">
 								<br>
 								<span></span>
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a>
 								<img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/finish-blue-202010?wid=102&hei=102&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1601072988000">
 								<br>
 								<span></span>
@@ -93,7 +96,7 @@
 					<span style="font-size: 16px;">Choose your capacity.</span>
 					<!-- 产品存储空间 -->
 					<ul class="buy-info-capacity">
-						<li><a> </a></li>
+						<li class="lidown"><a> </a></li>
 						<li><a> </a></li>
 						<li><a> </a></li>
 						<li><a> </a></li>
@@ -220,7 +223,7 @@
 		//判断产品id是几位数
 		if (params.length == 1) {
 			//读取json文件，校验
-				
+			$.getJSON('JSON/iphone.json', function(infos) {
 				var id = 0;
 				//id和json中的数组循环比较，找到该id的产品
 				for (var i = 0; i < infos.iphone.length; i++) {
@@ -233,6 +236,7 @@
 				if (checkout) {
 					var pimg = infos.iphone[id].pimg;
 					var img = '<img src="' + pimg + '">';
+					//在对应的元素中添加元素
 					$('.buy-img').append(img);
 					localStorage.setItem("img", img);
 					var name = infos.iphone[id].pname;
@@ -252,7 +256,6 @@
 					for (k = 0; k < para.length; k++) {
 						li.eq(k).find("a").text(para[k]);
 					}
-
 				}
 			});
 		} else if (params.length == 2) {
@@ -322,5 +325,18 @@
 				}
 			});
 		};
+	</script>
+	<script>
+		//当选中li时，改变它的外边框，其他的li边框恢复为原来的颜色
+		$(function(){
+		  $(".buy-info-color li").click(function(){
+		    $(".buy-info-color li").eq($(this).index()).addClass("lidown").siblings().removeClass("lidown");
+		  })
+		})
+		$(function(){
+		  $(".buy-info-capacity li").click(function(){
+		    $(".buy-info-capacity li").eq($(this).index()).addClass("lidown").siblings().removeClass("lidown");
+		  })
+		})
 	</script>
 </html>

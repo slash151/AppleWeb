@@ -12,7 +12,12 @@
 }
 .name{
 	text-align: center;
+	width: 400px;
+	margin: 0 auto;
+	margin-bottom: 50px;
 }
+
 .photo{
-	width: s;
+	margin-top: 30px;
+	width: 400px;
 }

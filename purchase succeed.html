@@ -30,7 +30,7 @@
 				<a href="ipad.html">iPad</a>
 				<a href="iphone.html">iPhone</a>
 				<a href="iwatch.html">Watch</a>
-				<a href="music.html">Music</a>
+				<a href="#">Music</a>
 				<a href="#">技术支持</a>
 				<a href="#"><span class="iconfont icon-iconsreach"></span></a>
 				<a><span class="iconfont icon-bag cart"></span></a>
@@ -49,8 +49,8 @@
 			<hr>
 		</div>
 		<div class="name">
-			<span class="produc-name" style="font-size: 50px;">ipad</span><br />
-			<span id="">已订购成功</span>
+			<span class="produc-name" style="font-size: 40px;"></span><br />
+			<span id="">已订购成功</span><br>
 			<div class="photo"></div>
 		</div>
 		<section class="fotitle">
@@ -158,11 +158,12 @@
 		</section>
 		<script src="js/style.js"></script>
 		<script>
+			//读取浏览器的localStorage.getItem值。
 			var name= localStorage.getItem("name");
 			var img= localStorage.getItem("img");
-			alert(img);
+			// 将元素添加到对应的元素中
 			$('.produc-name').text(name);
-			$('.name').append(img);
+			$('.photo').append(img);
 		</script>
 	</body>
 </html>

@@ -18,27 +18,22 @@
 		//获取数组中的对象
 		var uname = pars[0].substr(pars[0].indexOf("=") + 1);
 		var upwd = pars[1].substr(pars[1].indexOf("=") + 1);
-		// alert(uname+","+upwd);
 		//读取json文件，校验
 		$.getJSON("JSON/users.json", function(infos) {
-			// infos.users; //返回的是数组[{},{},{}]
+			//挨个获取数组中的元素，进行比较
 			for (var i = 0; i < infos.users.length; i++) {
-				// infos.users[i];//{"username":"","pwd":""}
-				// infos.users[i].username;
-				// infos.users[i].pwd;
 				if (uname == infos.users[i].username && upwd == infos.users[i].password) {
-					// alert("登录成功");
 					checkout = true;
+					//在本地的localStorage.loginName中存储用户名
 					localStorage.loginName = uname;
 					break;
 				}
 			}
+			//如果比较成功，跳转到主页。失败后跳转到登录界面
 			if (checkout) {
 				window.location.href = "index.html";
 			} else {
-				// alert("登录失败");
-				// localStorage.errinfo = uname;
-				window.location.href = "account.html";
+				window.location.href = "login-in.html";
 			}
 		});
 	</script>
