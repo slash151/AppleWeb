@@ -2,18 +2,15 @@ $(function() {
 	// $('nav').find('a').click(function(){
 	//     $(this).css({color:'#ccc'}).siblings().css('color','#fff');
 	// });
-
 	// 轮播
 	var i = 0;
 	var j = 0;
-
 	function lb() {
 		i++;
 		$('.banner ul li').find('p').eq(j).css({
 			width: i + '%',
 			background: '#999'
 		})
-
 		timer = setTimeout(function() {
 			lb();
 		}, 30);
@@ -45,7 +42,6 @@ $(function() {
 			width: '100%',
 			background: '#999'
 		}).parent().siblings().find('p').css('width', '0');
-
 	})
 
 	// 左右箭头
@@ -65,10 +61,7 @@ $(function() {
 	$('.banner .prev').click(function() {
 		clearTimeout(timer);
 		var jj = j--;
-
 		if (jj < 0) {
-
-
 			$('.banner').find('.img').eq(2).fadeIn(1000).siblings('.img').css('display', 'none');
 			$('.banner ul li').find('p').eq(2).css({
 				width: '100%',
